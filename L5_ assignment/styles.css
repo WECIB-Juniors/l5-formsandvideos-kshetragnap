@@ -3,7 +3,7 @@
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-  background-color: #e7b0e4;
+  background-color: #c532be;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -29,7 +29,7 @@ input[type=text]:focus {
   background-color: lightblue;
 }
 input[type=text] {
-  background-color: #c90fcf;
+  background-color: #f3f3f3;
   color: white;
 }
 .long-form{
