@@ -7,17 +7,13 @@
     <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
-
+<!--Header and description-->
     <h1>Welcome to Cookie Monster</h1>
     <p>Hey guys!</p>
-    
-        <!-- Label Tag defines labels for form elements. -->
-         <!-- Label Tags are critical for Accessibility -->
-          <!-- Label elements help users click on small form elements because clicking the label text will also trigger clicking of the form element. -->
-           <!-- for attribute of the <label> tag should be equal to id attribute of the <input> element to bind them together. -->
+    <!--First form which asks for name, email, password, favorite cookie, comments, and checkboix to subscribe with submit button.-->
+    <form target="_blank" class="long-form" method="get">
         <label for="fullname">Full Name: </label>
         <br>
-        <!-- Every INPUT element NEEDS a name attribute. If an <input> element does not have a name element, it will NOT send any data when submitted. -->
         <input type="text" name="fullname" id="fullname" required><br>
         <label for="email">Email address:</label> 
         <br> 
@@ -33,34 +29,24 @@
         </select><br><br>
         <label for="comments">Comments:</label>
         <textarea name="comments"></textarea><br>
-        <!-- Checkboxes allow users to select 0 or 1 or MORE from a selection. -->
         <label for="subscribe">Subscribe?</label>
         <input type="checkbox" name="subscribe">
         <input type="submit">
     </form>
-    <!-- <form> elements come with a target="" attribute to specify where to display the response that is received after submitting the form. -->
-        <!-- We'll mostly just use "_blank", but feel free to try others. -->
-    
+    <!--second form which asks for favorite flavor-->
     <br>
-    <form target="_blank" class="long-form">
+    <form target="_blank" class="long-form" method="get">
         <h2>Choose your fav!!!</h2>
-        <!-- When it comes to Radio buttons (the circular ones), only one can be selected at once. To limit these, set the name for each radio to the SAME name, but have them differ on ID and VALUE -->
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">sweet</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">sour</label><br>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">bitter</label>
-        <br><br><input type="submit">
-    </form>
-   
-    <!-- <form> action="" attribute defines the action to be performed when the form is submitted. Usually, data is sent to file on server, but when omitted, the action is set to the current page, as defined explicitly here. -->
-        <!-- We won't worry much about action="" until we get to full-stack web dev. -->
-    <!-- The method="" attribute specifies the HTTP method to be used when submitting the form data. -->
-
-   
-
-    <video autoplay controls width="720" height="480">
+        <input type="radio" id="sweet" name="fav_flavor" value="sweet">
+        <label for="sweet">sweet</label><br>
+        <input type="radio" id="sour" name="fav_flavor" value="sour">
+        <label for="sour">sour</label><br>
+        <input type="radio" id="bitter" name="fav_flavor" value="bitter">
+        <label for="bitter">bitter</label>
+        <br><br><input type="sbmit">
+    </form>u
+<!--video of cookie-->
+    <video autoplay controls width="720" height="480" alt="cookie being dipped in milk">
     <source src="./cookie.mp4" type="video/mp4" />
     </video>
 
